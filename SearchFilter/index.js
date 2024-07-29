@@ -50,3 +50,7 @@ let products = {
       },
     ],
   };
+
+  for (let i of products.data){
+    
+  }
