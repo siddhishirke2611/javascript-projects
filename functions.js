@@ -11,3 +11,8 @@ function greet(name){
     console.log("hello " + name + ", welcome");
 }
 greet("siddhi")
+
+let text = "siddhishirke";
+
+let strArr = Array.from(text);
+console.log(strArr);
