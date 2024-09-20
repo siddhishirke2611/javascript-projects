@@ -53,8 +53,7 @@ console.log(sum1);
 
 function sumArray(ar) {
     let sum2 = 0;
-    for (let i = 0; i < ar.length; i++)
-    {
+    for (let i = 0; i < ar.length; i++) {
         sum2 += ar[i];
     }
     return sum2;
@@ -64,3 +63,89 @@ let sum2 = sumArray(ar);
 console.log(sum2);
 
 //#9 Calculate the average of the numbers in an array of numbers
+
+function averageArray(ar) {
+    let n = ar1.length;
+    let sum = 0;
+
+    for (let i = 0; i < n; i++) {
+        sum += ar1[i];
+    }
+    return sum / n;
+}
+let ar1 = [1, 3, 9, 15, 90];
+let avg = averageArray(ar1);
+console.log("Average: ", avg);
+
+// #10 Print the first 10 Fibonacci numbers without recursion
+
+let f0 = 0;
+console.log(f0);
+
+let f1 = 1;
+console.log(f1);
+
+for (let i = 2; i < 10; i++) {
+    let fi = f1 + f0;
+    console.log(fi);
+
+    f0 = f1;
+    f1 = fi;
+}
+
+// #11 Create a function that will find the nth Fibonacci number using recursion
+function findFibonacci(n) {
+    if (n == 0)
+        return 0;
+
+    if (n == 1)
+        return 1;
+
+    return findFibonacci(n - 1) + findFibonacci(n - 2);
+}
+
+let n = findFibonacci(10);
+console.log(n);
+
+
+// #12 Calculate the sum of digits of a positive integer number
+
+function sumDigits(n) {
+    let s = n.toString();
+    let sumint = 0;
+
+    for (let char of s) {
+        let digit = parseInt(char);
+        sumint += digit;
+    }
+
+    return sumint;
+}
+
+let sumint = sumDigits(123589);
+console.log("Sum: ", sumint);
+
+//#13: Rotate an array to the left 1 position
+
+let ary = [1, 2, 3];
+rotateLeft(ary);
+console.log(ary);
+
+function rotateLeft(ary) {
+    let first = ary.shift();
+    ary.push(first);
+}
+
+//#14 Rotate an array to the right 1 position
+
+let aryy = [1, 2, 3];
+rotateRight(aryy);
+console.log(aryy);
+
+function rotateRight(aryy) {
+    let last = aryy.pop();
+    aryy.unshift(last);
+}
+
+
+
