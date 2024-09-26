@@ -1,14 +1,12 @@
-let fruits = new Array("apple", "orange", "banana");
-console.log(fruits[0]);
+let arr = [];
+console.log(typeof arr);
 
-//for each method
+// using array constructor
+// let fruits = new Array("apple", "orange", "mango")
+// console.log(fruits);
 
-fruits.forEach((curElem, index, arr) =>{
-    console.log(`${curElem} ${index}`);
-})
+// using array literal
+let fruits = [ 'apple', 'orange', 'mango' ]
+console.log(fruits);
 
-//map function 
-
-fruits.map(() =>{
-    
-})
+//create an empty array

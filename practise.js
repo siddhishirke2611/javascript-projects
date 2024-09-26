@@ -88,7 +88,6 @@ console.log(f1);
 for (let i = 2; i < 10; i++) {
     let fi = f1 + f0;
     console.log(fi);
-
     f0 = f1;
     f1 = fi;
 }
@@ -125,6 +124,7 @@ function sumDigits(n) {
 let sumint = sumDigits(123589);
 console.log("Sum: ", sumint);
 
+
 //#13: Rotate an array to the left 1 position
 
 let ary = [1, 2, 3];
@@ -135,7 +135,6 @@ function rotateLeft(ary) {
     let first = ary.shift();
     ary.push(first);
 }
-
 //#14 Rotate an array to the right 1 position
 
 let aryy = [1, 2, 3];
@@ -146,6 +145,30 @@ function rotateRight(aryy) {
     let last = aryy.pop();
     aryy.unshift(last);
 }
+
+
+//#15 Calculate the sum of digits of a positive integer number
+
+function sumDigits(n) {
+    let s = n.toString();
+    let sum5 = 0;
+
+    for (let char of s) {
+        let digit = parseInt(char);
+        sum5 += digit;
+    }
+
+    return sum5;
+}
+let sum5 = sumDigits(1235231);
+console.log("Sum: ", sum5);
+
+//#16 Print the first 100 prime numbers
+
+
+
+
+
 
 
 
